@@ -17,3 +17,15 @@ spec:
       containers:
       - name: web
         image: jaibw/demowebsite:yourname
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: yourname
+spec:
+  type: NodePort
+  selector:
+    tier: yourname
+  ports:
+    - port: 80
+      targetPort: 80

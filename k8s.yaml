@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: jaibw/demowebsite:yourname
+        image: jaibw/demowebsite:yourname-buildnumber
 ---
 apiVersion: v1
 kind: Service
